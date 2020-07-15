@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ContactSample</string>
+    <string name="profile_error">Ocorreu um erro ao buscar informações.</string>
+    <string name="profile_label">Usuário:</string>
+</resources>
