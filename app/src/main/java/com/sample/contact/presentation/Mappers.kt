@@ -17,6 +17,13 @@ fun UserProfileResponse.toProfile(): UserProfile? {
     }
 }
 
+fun UserProfileResponse.isValid(): Boolean {
+    val idIsOk = id != 0L
+    val nameIsOk = !name.isNullOrEmpty()
+    val phoneIsOk = phone.orEmpty().length == 11 && phone?.toLongOrNull() != null
+    return idIsOk && nameIsOk && phoneIsOk
+}
+
 fun UserProfile.toViewObject() = ProfileVO(
     name.firstWord(),
     phone.formatted()

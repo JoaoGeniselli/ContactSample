@@ -3,7 +3,7 @@ package com.sample.contact.domain
 import android.telephony.PhoneNumberUtils
 import java.util.*
 
-// ESTRUTURA DE DADO, com certo comportamento
+// OBJETO, representando um número de telefone
 class Phone(
     private val rawPhone: String
 ) {

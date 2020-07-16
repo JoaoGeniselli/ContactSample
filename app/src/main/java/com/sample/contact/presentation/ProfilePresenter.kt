@@ -1,6 +1,5 @@
 package com.sample.contact.presentation
 
-import com.sample.contact.common.firstWord
 import com.sample.contact.domain.UseCase
 import com.sample.contact.domain.UserProfile
 
@@ -27,9 +26,6 @@ class ProfilePresenter(
             }
         )
     }
-
-
-
 
     override fun onEditProfileClicked() {
         // ...
